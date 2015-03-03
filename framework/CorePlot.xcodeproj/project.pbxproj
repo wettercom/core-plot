@@ -196,6 +196,7 @@
 		C3A695E6146A19BC00AF5653 /* CPTMutablePlotRange.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A695E4146A19BC00AF5653 /* CPTMutablePlotRange.m */; };
 		C3AFC9D10FB62969005DFFDC /* CPTImage.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AFC9CF0FB62969005DFFDC /* CPTImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3BFFD1112274CB500DE22AC /* CPTNumericDataTypeConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97EF08104D80D400B554F9 /* CPTNumericDataTypeConversionTests.m */; };
+		C3C1C0801790D3B400E8B1B7 /* CPTLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1C07F1790D3B400E8B1B7 /* CPTLayerTests.m */; };
 		C3C9CB0E165DB4D500739006 /* CPTAnimationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C9CB0C165DB4D500739006 /* CPTAnimationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3C9CB0F165DB4D500739006 /* CPTAnimationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C9CB0D165DB4D500739006 /* CPTAnimationOperation.m */; };
 		C3C9CB13165DB50300739006 /* CPTAnimationPeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C9CB11165DB50300739006 /* CPTAnimationPeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -235,6 +236,8 @@
 		C3DA34CD107AD7710051DA02 /* _CPTXYTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DA34CB107AD7710051DA02 /* _CPTXYTheme.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C3F31DE91045EB470058520A /* CPTPlotGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F31DE71045EB470058520A /* CPTPlotGroup.m */; };
 		C3F31DEA1045EB470058520A /* CPTPlotGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F31DE81045EB470058520A /* CPTPlotGroup.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C3F97F1E17A9E07C00A52FF2 /* CPTFunctionDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F97F1C17A9E07B00A52FF2 /* CPTFunctionDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F97F1F17A9E07C00A52FF2 /* CPTFunctionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F97F1D17A9E07B00A52FF2 /* CPTFunctionDataSource.m */; };
 		D0C0477D12D6560900DA8047 /* CPTRangePlot.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C0477B12D6560900DA8047 /* CPTRangePlot.m */; };
 		D0C0477E12D6560900DA8047 /* CPTRangePlot.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C0477C12D6560900DA8047 /* CPTRangePlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -453,6 +456,8 @@
 		C3B235631009931400970270 /* doxygen-cocoa-tags.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "doxygen-cocoa-tags.xml"; path = "../documentation/doxygen/doxygen-cocoa-tags.xml"; sourceTree = "<group>"; };
 		C3C032C710B8DEDC003A11B6 /* CPTAxisLabelGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabelGroup.h; sourceTree = "<group>"; };
 		C3C032C810B8DEDC003A11B6 /* CPTAxisLabelGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTAxisLabelGroup.m; sourceTree = "<group>"; };
+		C3C1C07E1790D3B400E8B1B7 /* CPTLayerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayerTests.h; sourceTree = "<group>"; };
+		C3C1C07F1790D3B400E8B1B7 /* CPTLayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTLayerTests.m; sourceTree = "<group>"; };
 		C3C2846F16584EB9006BA43C /* CPTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnimation.h; sourceTree = "<group>"; };
 		C3C2847016584EB9006BA43C /* CPTAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTAnimation.m; sourceTree = "<group>"; };
 		C3C2847316585085006BA43C /* _CPTAnimationTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTAnimationTimingFunctions.h; sourceTree = "<group>"; };
@@ -497,6 +502,8 @@
 		C3DA34CB107AD7710051DA02 /* _CPTXYTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTXYTheme.h; sourceTree = "<group>"; };
 		C3F31DE71045EB470058520A /* CPTPlotGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTPlotGroup.m; sourceTree = "<group>"; };
 		C3F31DE81045EB470058520A /* CPTPlotGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotGroup.h; sourceTree = "<group>"; };
+		C3F97F1C17A9E07B00A52FF2 /* CPTFunctionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTFunctionDataSource.h; sourceTree = "<group>"; };
+		C3F97F1D17A9E07B00A52FF2 /* CPTFunctionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTFunctionDataSource.m; sourceTree = "<group>"; };
 		C3FF6EF00FFFA51D00AF0496 /* mainpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mainpage.h; path = Source/mainpage.h; sourceTree = "<group>"; };
 		D0C0477B12D6560900DA8047 /* CPTRangePlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTRangePlot.m; sourceTree = "<group>"; };
 		D0C0477C12D6560900DA8047 /* CPTRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTRangePlot.h; sourceTree = "<group>"; };
@@ -567,6 +574,7 @@
 				C3286BFE15D8740100A436A8 /* _CPTMaskLayer.h */,
 				C3286BFF15D8740100A436A8 /* _CPTMaskLayer.m */,
 				07AEF1FD10BBE1F10012BEFF /* CPTResponder.h */,
+				C3C1C07D1790D39F00E8B1B7 /* Tests */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -796,6 +804,8 @@
 				32484B400F530E8B002151AD /* CPTPlotRange.m */,
 				C3A695E3146A19BC00AF5653 /* CPTMutablePlotRange.h */,
 				C3A695E4146A19BC00AF5653 /* CPTMutablePlotRange.m */,
+				C3F97F1C17A9E07B00A52FF2 /* CPTFunctionDataSource.h */,
+				C3F97F1D17A9E07B00A52FF2 /* CPTFunctionDataSource.m */,
 				076A775F0FBF0BFE003F6D97 /* Tests */,
 			);
 			name = "Types and Functions";
@@ -1092,6 +1102,15 @@
 			name = Labels;
 			sourceTree = "<group>";
 		};
+		C3C1C07D1790D39F00E8B1B7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C3C1C07E1790D3B400E8B1B7 /* CPTLayerTests.h */,
+				C3C1C07F1790D3B400E8B1B7 /* CPTLayerTests.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		C3C2846D16584E7C006BA43C /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1261,6 +1280,7 @@
 				A92C00498745CB844AF563E0 /* _CPTAnimationCGRectPeriod.h in Headers */,
 				A92C0FF1D344D29225207775 /* _CPTAnimationNSDecimalPeriod.h in Headers */,
 				A92C0C48A737EFEBA33ABC75 /* _CPTAnimationPlotRangePeriod.h in Headers */,
+				C3F97F1E17A9E07C00A52FF2 /* CPTFunctionDataSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1312,7 +1332,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CorePlot" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1380,7 +1400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  Graphical class diagrams require Graphviz.\n#  Graphviz.app is available free online\n# http://www.graphviz.org/Download_macos.php\n\n#  If the config file doesn't exist, run 'doxygen -g \"${SOURCE_ROOT}/../documentation/doxygen/doxygen.config\"' to \n#   a get default file.\n\nif ! [ -f \"${SOURCE_ROOT}/../documentation/doxygen/doxygen.config\" ] \nthen \n  echo doxygen config file does not exist\n  ${DOXYGEN_PATH} -g \"${SOURCE_ROOT}/../documentation/doxygen/doxygen.config\"\nfi\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n${DOXYGEN_PATH} \"${SOURCE_ROOT}/../documentation/doxygen/doxygen.config\"\n\n#  make a copy of the html docs\nmkdir -p \"${SOURCE_ROOT}/../documentation/html/MacOS\"\ncp -R \"${SOURCE_ROOT}/CorePlotDocs.docset/html/\" \"${SOURCE_ROOT}/../documentation/html/MacOS\"\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C \"${SOURCE_ROOT}/CorePlotDocs.docset/html\" install\n\n#  add publisher info to the docset\n\nfind \"/Users/${USER}/Library/Developer/Shared/Documentation/DocSets/com.CorePlot.Framework.docset/Contents/\" -type f -name Info.plist | xargs perl -pi -e 's/\\<\\/dict\\>/\\t\\<key\\>DocSetPublisherIdentifier\\<\\/key\\>\\n\\t\\<string\\>com.CorePlot.documentation\\<\\/string\\>\\n\\t\\<key\\>DocSetPublisherName\\<\\/key\\>\\n\\t\\<string\\>Core Plot\\<\\/string\\>\\n\\t\\<key\\>NSHumanReadableCopyright\\<\\/key\\>\\n\\t\\<string\\>Copyright © 2011 Core Plot. All rights reserved.\\<\\/string\\>\\n\\<\\/dict\\>\\n/g'\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\nrm -f \"${TEMP_DIR}/loadDocSet.scpt\"\n\necho \"tell application \\\"Xcode\\\"\" >> \"${TEMP_DIR}/loadDocSet.scpt\"\necho \"load documentation set with path \\\"/Users/${USER}/Library/Developer/Shared/Documentation/DocSets/\\\"\" >> \"${TEMP_DIR}/loadDocSet.scpt\"\necho \"end tell\" >> \"${TEMP_DIR}/loadDocSet.scpt\"\n\n#  Run the load-docset applescript command.\n\nosascript \"${TEMP_DIR}/loadDocSet.scpt\"\n\nexit 0";
+			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  Graphical class diagrams require Graphviz.\n#  Graphviz.app is available free online\n# http://www.graphviz.org/Download_macos.php\n\n#  If the config file doesn't exist, run 'doxygen -g \"${SOURCE_ROOT}/../documentation/doxygen/doxygen.config\"' to \n#   a get default file.\n\nDOXYGEN_FOLDER=\"${SOURCE_ROOT}/../documentation/doxygen\"\n\nif ! [ -f \"${DOXYGEN_FOLDER}/doxygen.config\" ] \nthen \n  echo doxygen config file does not exist\n  ${DOXYGEN_PATH} -g \"${DOXYGEN_FOLDER}/doxygen.config\"\nfi\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n${DOXYGEN_PATH} \"${DOXYGEN_FOLDER}/doxygen.config\"\n\n#  make a copy of the html docs\nDOCS_FOLDER=\"${SOURCE_ROOT}/../documentation/html/MacOS\"\nmkdir -p \"${DOCS_FOLDER}\"\ncp -R \"${SOURCE_ROOT}/CorePlotDocs.docset/html/\" \"${DOCS_FOLDER}\"\nrm -f \"${DOCS_FOLDER}/Info.plist\"\nrm -f \"${DOCS_FOLDER}/Makefile\"\nrm -f \"${DOCS_FOLDER}/Nodes.xml\"\nrm -f \"${DOCS_FOLDER}/Tokens.xml\"\n\n#  fix nodes.xml so the docset gets the correct index page\nsed -i 's|<Path>index.html</Path>|<File>index.html</File>' \"${SOURCE_ROOT}/CorePlotDocs.docset/html/nodes.xml\"\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\nmake -C \"${SOURCE_ROOT}/CorePlotDocs.docset/html\" install\n\n#  add publisher info to the docset\nDOCSET_FOLDER=\"/Users/${USER}/Library/Developer/Shared/Documentation/DocSets/com.CorePlot.Framework.docset\"\n\nfind \"${DOCSET_FOLDER}/Contents/\" -type f -name Info.plist | xargs perl -pi -e 's/\\<\\/dict\\>/\\t\\<key\\>DocSetPublisherIdentifier\\<\\/key\\>\\n\\t\\<string\\>com.CorePlot.documentation\\<\\/string\\>\\n\\t\\<key\\>DocSetPublisherName\\<\\/key\\>\\n\\t\\<string\\>Core Plot\\<\\/string\\>\\n\\t\\<key\\>NSHumanReadableCopyright\\<\\/key\\>\\n\\t\\<string\\>Copyright © 2013 Core Plot. All rights reserved.\\<\\/string\\>\\n\\t\\<key\\>isJavaScriptEnabled\\<\\/key\\>\\n\\t\\<true\\/>\\n\\<\\/dict\\>\\n/g'\n\n#  add docset icon\ncp \"${DOXYGEN_FOLDER}/icon.png\" \"${DOCSET_FOLDER}\"\n\n#  make a copy of the docset\nrm -Rf \"${SOURCE_ROOT}/CorePlotDocs.docset\"\ncp -R \"${DOCSET_FOLDER}\" \"${SOURCE_ROOT}\"\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\nrm -f \"${TEMP_DIR}/loadDocSet.scpt\"\n\necho \"tell application \\\"Xcode\\\"\" >> \"${TEMP_DIR}/loadDocSet.scpt\"\necho \"load documentation set with path \\\"/Users/${USER}/Library/Developer/Shared/Documentation/DocSets/\\\"\" >> \"${TEMP_DIR}/loadDocSet.scpt\"\necho \"end tell\" >> \"${TEMP_DIR}/loadDocSet.scpt\"\n\n#  Run the load-docset applescript command.\nosascript \"${TEMP_DIR}/loadDocSet.scpt\"\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1412,6 +1432,7 @@
 				C3D979B513D2340000145DFF /* CPTImageTests.m in Sources */,
 				C3D979B813D2344100145DFF /* CPTLineStyleTests.m in Sources */,
 				C3D979BB13D2347400145DFF /* CPTFillTests.m in Sources */,
+				C3C1C0801790D3B400E8B1B7 /* CPTLayerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1512,6 +1533,7 @@
 				A92C08762FC96FB6E9FAAB2F /* _CPTAnimationCGRectPeriod.m in Sources */,
 				A92C02FFEE33F8D28665257B /* _CPTAnimationNSDecimalPeriod.m in Sources */,
 				A92C0C9E536E2E8E89D6E5FB /* _CPTAnimationPlotRangePeriod.m in Sources */,
+				C3F97F1F17A9E07C00A52FF2 /* CPTFunctionDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1618,7 +1640,13 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@loader_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-deprecated-implementations",
+				);
 				PRODUCT_NAME = CorePlot;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -1641,7 +1669,13 @@
 				GCC_PREFIX_HEADER = CorePlot_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@loader_path/../Frameworks";
+				OTHER_CFLAGS = (
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-deprecated-implementations",
+				);
 				PRODUCT_NAME = CorePlot;
+				SKIP_INSTALL = YES;
 				"VALID_ARCHS[sdk=*]" = "i386 x86_64";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1650,7 +1684,6 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
@@ -1701,7 +1734,6 @@
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;

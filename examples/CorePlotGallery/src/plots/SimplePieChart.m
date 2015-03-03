@@ -95,7 +95,17 @@
     theLegend.numberOfColumns = 1;
     theLegend.fill            = [CPTFill fillWithColor:[CPTColor whiteColor]];
     theLegend.borderLineStyle = [CPTLineStyle lineStyle];
-    theLegend.cornerRadius    = 5.0;
+
+    theLegend.entryFill            = [CPTFill fillWithColor:[CPTColor lightGrayColor]];
+    theLegend.entryBorderLineStyle = [CPTLineStyle lineStyle];
+    theLegend.entryCornerRadius    = CPTFloat(3.0);
+    theLegend.entryPaddingLeft     = CPTFloat(3.0);
+    theLegend.entryPaddingTop      = CPTFloat(3.0);
+    theLegend.entryPaddingRight    = CPTFloat(3.0);
+    theLegend.entryPaddingBottom   = CPTFloat(3.0);
+
+    theLegend.cornerRadius = 5.0;
+    theLegend.delegate     = self;
 
     graph.legend = theLegend;
 
@@ -143,6 +153,14 @@
 }
 
 #pragma mark -
+#pragma mark CPTLegendDelegate Methods
+
+-(void)legend:(CPTLegend *)legend legendEntryForPlot:(CPTPlot *)plot wasSelectedAtIndex:(NSUInteger)idx;
+{
+    NSLog(@"Legend entry for '%@' was selected at index %lu.", plot.identifier, (unsigned long)idx);
+}
+
+#pragma mark -
 #pragma mark Plot Data Source Methods
 
 -(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot
@@ -173,9 +191,11 @@
 #endif
 
     NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"Pie Slice %lu", (unsigned long)index]];
-    [title addAttribute:NSForegroundColorAttributeName
-                  value:sliceColor
-                  range:NSMakeRange(4, 5)];
+    if ( &NSForegroundColorAttributeName != NULL ) {
+        [title addAttribute:NSForegroundColorAttributeName
+                      value:sliceColor
+                      range:NSMakeRange(4, 5)];
+    }
 
     return [title autorelease];
 }

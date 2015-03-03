@@ -106,6 +106,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "NSColor(CPTPlatformSpecificExtensions)", "category_n_s_color_07_c_p_t_platform_specific_extensions_08.html", null ],
     [ "<NSCopying>", "https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Protocols/NSCopying_Protocol/Reference/Reference.html", [
       [ "CPTColor", "interface_c_p_t_color.html", null ],
       [ "CPTConstraints", "interface_c_p_t_constraints.html", null ],
@@ -135,6 +136,7 @@ var hierarchy =
         [ "CPTColorSpace", "interface_c_p_t_color_space.html", null ],
         [ "CPTConstraints", "interface_c_p_t_constraints.html", null ],
         [ "CPTFill", "interface_c_p_t_fill.html", null ],
+        [ "CPTFunctionDataSource", "interface_c_p_t_function_data_source.html", null ],
         [ "CPTGradient", "interface_c_p_t_gradient.html", null ],
         [ "CPTImage", "interface_c_p_t_image.html", null ],
         [ "CPTLegendEntry", "interface_c_p_t_legend_entry.html", null ],
@@ -164,11 +166,14 @@ var hierarchy =
     ] ],
     [ "NSNumber(CPTExtensions)", "category_n_s_number_07_c_p_t_extensions_08.html", null ],
     [ "<NSObject>", "https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html", [
-      [ "<CPTAnimationDelegate>", "protocol_c_p_t_animation_delegate-p.html", null ],
+      [ "<CPTAnimationDelegate>", "protocol_c_p_t_animation_delegate-p.html", [
+        [ "CPTXYPlotSpace", "interface_c_p_t_x_y_plot_space.html", null ]
+      ] ],
       [ "<CPTAxisDelegate>", "protocol_c_p_t_axis_delegate-p.html", null ],
       [ "<CPTLegendDelegate>", "protocol_c_p_t_legend_delegate-p.html", null ],
       [ "<CPTPlotDataSource>", "protocol_c_p_t_plot_data_source-p.html", [
         [ "<CPTBarPlotDataSource>", "protocol_c_p_t_bar_plot_data_source-p.html", null ],
+        [ "CPTFunctionDataSource", "interface_c_p_t_function_data_source.html", null ],
         [ "<CPTPieChartDataSource>", "protocol_c_p_t_pie_chart_data_source-p.html", null ],
         [ "<CPTRangePlotDataSource>", "protocol_c_p_t_range_plot_data_source-p.html", null ],
         [ "<CPTScatterPlotDataSource>", "protocol_c_p_t_scatter_plot_data_source-p.html", null ],
