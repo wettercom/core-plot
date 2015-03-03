@@ -1,15 +1,66 @@
-# Next Release
+# Next Release (TBD)
 
 ## Release Notes
 
 To be determined.
 
 ## Details
+- **New**: Updated CPTAnimation to allow animations to start at the current value of the animated property instead of a fixed value.
+- **New**: Added annotations to the responder chain.
+- **New**: Added a plot space method to scale the plot range for a single coordinate.
+- **New**: Added properties to control momentum scrolling for the x- and y-directions separately.
+- **New**: Added an identifier and user info dictionary to animation operations.
+- **New**: Animations can now start when the value of the animated property enters the animated range.
+- **New**: Added legend delegate methods to customize the swatch fill and border line style for each legend entry.
+- **New**: Added a plot property to control drawing of the legend entry swatch.
+- **New**: Added options to draw a background fill behind and a border line around each legend entry.
+- **Changed**: Switched to a new algorithm for computing curved scatter plots.
+- **Changed**: Miscellaneous bug fixes and cleanup.
+- **Removed**: Removed the elastic global range properties from `CPTXYPlotSpace`. Turning on momentum scrolling now automatically allows elastic ranges, too.
+
+
+
+# Release 1.4 (September 28, 2013)
+
+## Release Notes
+
+This release adds a helper class that makes it easy to create a datasource to plot a mathematical function.
+The function datasource can plot any c-style function that returns the value of *y* = *f*(*x*).
+The release also adds new delegate methods for legends and axis labels, a new line drawing style, new axis and
+data label positioning options, and support for label formatters that return styled text.
+
+This release deprecates all plot space methods that take a c-style array of coordinate values.
+They have been replaced with equivalent methods that add an additional parameter to pass
+the size of the array and will be removed in a future release.
+
+## Details
+- **New**: Added properties to allow axis labels to be positioned independent of the tick direction.
+- **New**: Added legend delegate methods to notify the delegate when a legend entry is selected.
+- **New**: Added support for lines drawn with a gradient following the stroked path.
+- **New**: Added support for axis and plot data label formatters that return styled text.
+- **New**: Added a datasource class that automatically creates scatter plot data from a function.
+- **New**: Added an option to turn off automatic plot data label anchor point adjustments.
+- **New**: Added a count parameter to all plot space methods that take a c-style array of coordinate values and deprecated the old versions. These methods will be removed in release 2.0.
+- **New**: Added axis label selection delegate methods.
+- **Changed**: Updated all projects to support Xcode 5.
+- **Changed**: Miscellaneous bug fixes and cleanup.
+
+
+
+# Release 1.3 (June 30, 2013)
+
+## Release Notes
+
+This release adds support for styled text (via `NSAttributedString`) in all titles, labels, and text layers.
+It adds support for momentum scrolling and "rubber band" snap-back when scrolling beyond
+the global *x*- and *y*-ranges.
+
+## Details
 - **New**: Added support for styled text in all titles, labels, and text layers.
 - **New**: Added a minor tick label shadow property to `CPTAxis`.
 - **New**: Added a property to hide plot data labels.
 - **New**: Added support for momentum scrolling.
-- **New**: Added support for "rubber band" snap-back when scrolling reaches the global x- and y-ranges.
+- **New**: Added support for "rubber band" snap-back when scrolling reaches the global *x*- and *y*-ranges.
 - **New**: Added line break mode support to `CPTTextStyle`.
 - **New**: Added a maximum layer size to `CPTTextLayer`.
 - **Changed**: Miscellaneous bug fixes and cleanup.

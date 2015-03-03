@@ -30,6 +30,7 @@ var annotated =
     [ "CPTDecimalNumberValueTransformer", "interface_c_p_t_decimal_number_value_transformer.html", null ],
     [ "CPTFill", "interface_c_p_t_fill.html", "interface_c_p_t_fill" ],
     [ "CPTFill(AbstractMethods)", "category_c_p_t_fill_07_abstract_methods_08.html", "category_c_p_t_fill_07_abstract_methods_08" ],
+    [ "CPTFunctionDataSource", "interface_c_p_t_function_data_source.html", "interface_c_p_t_function_data_source" ],
     [ "CPTGradient", "interface_c_p_t_gradient.html", "interface_c_p_t_gradient" ],
     [ "CPTGradientElement", "struct_c_p_t_gradient_element.html", "struct_c_p_t_gradient_element" ],
     [ "CPTGraph", "interface_c_p_t_graph.html", "interface_c_p_t_graph" ],
@@ -97,6 +98,7 @@ var annotated =
     [ "CPTXYPlotSpace", "interface_c_p_t_x_y_plot_space.html", "interface_c_p_t_x_y_plot_space" ],
     [ "NSAttributedString(CPTPlatformSpecificAttributedStringExtensions)", "category_n_s_attributed_string_07_c_p_t_platform_specific_attributed_string_extensions_08.html", "category_n_s_attributed_string_07_c_p_t_platform_specific_attributed_string_extensions_08" ],
     [ "NSCoder(CPTExtensions)", "category_n_s_coder_07_c_p_t_extensions_08.html", "category_n_s_coder_07_c_p_t_extensions_08" ],
+    [ "NSColor(CPTPlatformSpecificExtensions)", "category_n_s_color_07_c_p_t_platform_specific_extensions_08.html", null ],
     [ "NSDecimalNumber(CPTExtensions)", "category_n_s_decimal_number_07_c_p_t_extensions_08.html", "category_n_s_decimal_number_07_c_p_t_extensions_08" ],
     [ "NSNumber(CPTExtensions)", "category_n_s_number_07_c_p_t_extensions_08.html", "category_n_s_number_07_c_p_t_extensions_08" ],
     [ "NSString(CPTTextStyleExtensions)", "category_n_s_string_07_c_p_t_text_style_extensions_08.html", "category_n_s_string_07_c_p_t_text_style_extensions_08" ]

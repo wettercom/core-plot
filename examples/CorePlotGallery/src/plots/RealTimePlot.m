@@ -5,10 +5,11 @@
 
 #import "RealTimePlot.h"
 
-const double kFrameRate         = 5.0;  // frames per second
-const double kAlpha             = 0.25; // smoothing constant
-const NSUInteger kMaxDataPoints = 51;
-NSString *kPlotIdentifier       = @"Data Source Plot";
+static const double kFrameRate = 5.0;  // frames per second
+static const double kAlpha     = 0.25; // smoothing constant
+
+static const NSUInteger kMaxDataPoints = 52;
+static NSString *const kPlotIdentifier = @"Data Source Plot";
 
 @implementation RealTimePlot
 
@@ -43,13 +44,6 @@ NSString *kPlotIdentifier       = @"Data Source Plot";
 {
     [plotData removeAllObjects];
     currentIndex = 0;
-    [dataTimer release];
-    dataTimer = [[NSTimer timerWithTimeInterval:1.0 / kFrameRate
-                                         target:self
-                                       selector:@selector(newData:)
-                                       userInfo:nil
-                                        repeats:YES] retain];
-    [[NSRunLoop mainRunLoop] addTimer:dataTimer forMode:NSDefaultRunLoopMode];
 }
 
 -(void)renderInLayer:(CPTGraphHostingView *)layerHostingView withTheme:(CPTTheme *)theme animated:(BOOL)animated
@@ -111,7 +105,7 @@ NSString *kPlotIdentifier       = @"Data Source Plot";
     y.axisConstraints             = [CPTConstraints constraintWithLowerOffset:0.0];
 
     // Rotate the labels by 45 degrees, just to show it can be done.
-    x.labelRotation = M_PI * 0.25;
+    x.labelRotation = M_PI_4;
 
     // Create the plot
     CPTScatterPlot *dataSourceLinePlot = [[[CPTScatterPlot alloc] init] autorelease];
@@ -128,8 +122,23 @@ NSString *kPlotIdentifier       = @"Data Source Plot";
 
     // Plot space
     CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
-    plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(0) length:CPTDecimalFromUnsignedInteger(kMaxDataPoints - 1)];
+    plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(0) length:CPTDecimalFromUnsignedInteger(kMaxDataPoints - 2)];
     plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(0) length:CPTDecimalFromUnsignedInteger(1)];
+
+    [dataTimer invalidate];
+    [dataTimer release];
+
+    if ( animated ) {
+        dataTimer = [[NSTimer timerWithTimeInterval:1.0 / kFrameRate
+                                             target:self
+                                           selector:@selector(newData:)
+                                           userInfo:nil
+                                            repeats:YES] retain];
+        [[NSRunLoop mainRunLoop] addTimer:dataTimer forMode:NSDefaultRunLoopMode];
+    }
+    else {
+        dataTimer = nil;
+    }
 }
 
 -(void)dealloc
@@ -156,9 +165,16 @@ NSString *kPlotIdentifier       = @"Data Source Plot";
         }
 
         CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)theGraph.defaultPlotSpace;
-        NSUInteger location       = (currentIndex >= kMaxDataPoints ? currentIndex - kMaxDataPoints + 1 : 0);
-        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(location)
-                                                        length:CPTDecimalFromUnsignedInteger(kMaxDataPoints - 1)];
+        NSUInteger location       = (currentIndex >= kMaxDataPoints ? currentIndex - kMaxDataPoints + 2 : 0);
+
+        CPTPlotRange *newRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(location)
+                                                              length:CPTDecimalFromUnsignedInteger(kMaxDataPoints - 2)];
+
+        [CPTAnimation animate:plotSpace
+                     property:@"xRange"
+                fromPlotRange:plotSpace.xRange
+                  toPlotRange:newRange
+                     duration:CPTFloat(1.0 / kFrameRate)];
 
         currentIndex++;
         [plotData addObject:[NSNumber numberWithDouble:(1.0 - kAlpha) * [[plotData lastObject] doubleValue] + kAlpha * rand() / (double)RAND_MAX]];
